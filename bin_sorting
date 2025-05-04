@@ -1,0 +1,19 @@
+a = [1000,1001,1009,1006,1008,1007,1005,1004,1003,1002,1010]
+
+leng = len(a) 
+new = [0] * leng
+
+for i in range(len(a)):
+    sub = a[i] - 1000
+    new[sub] = 1 
+
+result = []
+
+for i in range(len(new)):
+    if(new[i] == 1):
+        result.append(i + 1000)
+print(result)
+    
+
+this is th perfect example of bin-sorting with the time complexity o(m + n) we sorted the array using bin sorting but the space complexity is increase to O(n) 
+ 
