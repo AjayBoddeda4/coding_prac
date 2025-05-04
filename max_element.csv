@@ -1,0 +1,13 @@
+a = [1,5,3,8,9,10,4,3,15,18,20,12,19]
+
+greatest = a[0]
+
+
+for i in range(len(a)):
+    if(a[i] > greatest):
+        greatest = a[i]
+print(greatest)
+
+
+
+Time Complexity is O(n) which is best
