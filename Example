@@ -1,0 +1,51 @@
+lets take the real life example we wants to constuct a contact list for that we need to add contacts and search the contacts :
+Now lets deal it with two things Arrays and LinkedList 
+
+
+Arrays:
+-------
+
+now if we wants to add the contact to the Arrays two things come into play:
+1.sorted array 
+2.unsorted array
+
+
+lets see the sorted array first:
+[1,2,3,4,5,6,7,8,9]
+
+
+Now if i have to add the number into the sorted list then the time complexity is O(n) 
+if i wants to perform the search operation on the sorted list then my time complexity is O(log n) because it is sorted array 
+
+
+let see Unsorted Array:
+[1,3,2,5,4,7,6,9,8]
+
+Now if i have to add the item into the unsorted array then the time complexity is O(1) because i can add it at any where 
+now if i have to perform search operation on the unsorted Array then the time Complexity is O(n) 
+
+
+Now if we see in Real case we can take time to add the contacts to the list but to search we need it immediately
+
+so sorted array is best with time complexity o(n) and O(log n) 
+
+
+Linked List:
+-----------
+now in linked list if we want to add we can do it in the starting in the head so time complexity is O(1) 
+
+If we wants to search the time complexity is O(1) 
+
+
+so the best is: Arrays sorted list
+               -------------------
+
+
+
+As the Time Complexity is O(log n) for searching can we decrease it : 
+
+lets see it by using Bit Sorting 
+
+
+Direct jump to code
+
