@@ -1,0 +1,18 @@
+a = int(input())
+
+original = a 
+reversed1 = 0 
+
+
+while a > 0:
+    digit = a % 10 
+    reversed1 = reversed1 * 10 + digit 
+    print(reversed1)
+    a = a//10 
+if original == reversed1:
+    print(original)
+
+time complexity is O(log n) because at every iteration the number is divisibel by 10 
+space complexity is O(1) 
+
+
