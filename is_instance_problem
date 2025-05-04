@@ -1,0 +1,13 @@
+a = [1,2,3,[4,5],6,7]
+result = []
+
+for i in range(len(a)):
+    if isinstance(a[i],list):
+        print(a[i])
+    else:
+        result +=[a[i]]
+print(result)
+        
+
+
+time complexity is o(n) space complexity is o(n)
