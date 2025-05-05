@@ -1,0 +1,23 @@
+a =  [12, 35, 1, 10, 34, 1]
+
+first = second = third = -1
+
+
+for i in a:
+    if i > first:
+        third = second
+        second = first 
+        first = i 
+    elif i != first and i > second:
+        third = second
+        second = i 
+    elif i != first and i != second and i > third:
+        third = i
+print(third)
+
+
+
+time complextiy is O(n) 
+space complextity is O(1)
+
+
