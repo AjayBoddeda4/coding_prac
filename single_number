@@ -30,4 +30,30 @@ space Complextiy is O(n)
 
 
 
-there is still we can do it easily 
+
+there is still we can do it easily
+
+
+a = [5,6,7,5,7]
+result = 0
+
+for i in range(len(a)):
+    result = result ^ a[i]
+print(result)
+    
+    
+    
+here we done using XOR operation we know how Xor works 1 xor 1 = 0 
+lets see how    
+
+8 4 2 1 -->  rule
+
+lets see 5 xor 6 
+
+binary for 5: 0 1 0 1
+binary for 6: 0 1 1 0
+--------------------- 
+now xor both:0 0 1 1  so now if we add the Xor values 2 + 1 = 3 so the output of 5 XOR 6 = 3
+  
+
+ 
