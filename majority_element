@@ -1,0 +1,21 @@
+ In the leetcode majority element i have solved the problem using defaultdict 
+
+
+from collections import defaultdict
+
+a = [3,3,4]
+leng = len(a)/2
+
+h1 = defaultdict(int)
+
+for i in a:
+    h1[i] = h1[i] +1 
+print(h1)
+for i in a:
+    if h1[i] >= leng:
+        output = i 
+print(output)
+
+ The Answer is Accepted and with Time complexity O(n) but my theory is lagging the space Complexity it should be O(1) but it is now O(n) 
+
+
