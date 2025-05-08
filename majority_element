@@ -1,4 +1,5 @@
- In the leetcode majority element i have solved the problem using defaultdict 
+ 
+In the leetcode majority element i have solved the problem using defaultdict 
 
 
 from collections import defaultdict
@@ -18,4 +19,12 @@ print(output)
 
  The Answer is Accepted and with Time complexity O(n) but my theory is lagging the space Complexity it should be O(1) but it is now O(n) 
 
+
+
+a = [2,2,1,1,1,2,2]
+a.sort()
+print(a[round(len(a)/2)])
+
+
+for sorting O(n log n) but to take the element the time complexity is O(1) so = O(n log n) + O(1) ~ O(n log n) 
 
