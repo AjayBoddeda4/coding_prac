@@ -28,3 +28,59 @@ print(a[round(len(a)/2)])
 
 for sorting O(n log n) but to take the element the time complexity is O(1) so = O(n log n) + O(1) ~ O(n log n) 
 
+
+final_solution:
+
+with Time complexity O(n) and space complexity is o(1) 
+
+a = [2,2,1,1,1,2,2]
+
+count = 0 
+majority = None 
+
+for i in a:
+    if count == 0:
+        majority = i 
+    if majority != i:
+        count -= 1 
+    else:
+        count += 1 
+print(majority)
+
+
+with the algorithm Boyer-moore voting algorithm:          
+                   ----------------------------- 
+
+[2,2,1,1,1,2,2]
+
+here 2 is majority element
+count = 1 
+
+again 2 count = 1
+
+now 1 
+
+count of 2 decreased to 1
+
+element 1 
+
+count of 2 decreased to 0 
+
+
+now when the count to 0 start fresh from the elements left in the array [1,2,2] 
+
+now 
+
+majority element is 1 
+count = 1 
+
+now 2 came 
+count = 0 
+
+now left in the array is [2] 
+
+majority element is 2 
+count = 1 
+
+
+
