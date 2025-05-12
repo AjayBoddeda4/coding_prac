@@ -1,0 +1,62 @@
+BEST TIME TO BUY AND SEll
+
+
+
+
+a = [5,8,9,4,3,10]
+
+min_num = a[0]
+max_profit = 0 
+
+for i in range(len(a)):
+    if a[i] < min_num:
+        min_num = a[i]
+    profit = a[i] - min_num 
+    if profit > max_profit:
+        max_profit = profit 
+print(max_profit)
+
+
+
+Time Complexity is O(n) 
+space Complexitry is O(1) 
+
+
+Theory:
+a = [5,8,9,4,3,10]
+
+
+min_num = a[0] 
+max_profit = 0 
+profit = 0 
+
+min_num = 5 
+if the min_num is less the the 5 then make then update the min_num 
+
+take profit = a[i] - min_num means  8 - 5 = 3 
+then profit = 3
+max_profit also = 3 
+
+min_num no change 
+profit = a[i] - min_num = 9 - 5 = 4 
+max_profit = 4
+
+then min_num = 4 update 
+profit = no change 
+max_profit = no change 
+
+
+3
+
+min_num = 3 
+profit = no change 
+max_profit = no change 
+
+
+10 
+
+min_num = 3 
+pofit = 10 - 3 = 7 
+max_profit = 7 
+ 
+
