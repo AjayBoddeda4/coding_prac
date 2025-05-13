@@ -1,0 +1,13 @@
+a = [1,2,4]
+
+n = 0 
+
+for i in a:
+    n = n * 10 + i 
+print(n + 1)
+
+
+Time Complexity is = O(n) 
+space Complexity = O(1)
+
+
