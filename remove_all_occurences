@@ -1,0 +1,17 @@
+a = [3, 2, 2, 3]
+b = 3
+
+count = 0
+
+for i in range(len(a)):
+    if a[i] == b:
+        a[count] = a[i]
+        count += 1 
+print(count) 
+
+
+
+time complexity is O(n) 
+space complexity is O(1) 
+
+
