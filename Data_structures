@@ -1,6 +1,4 @@
- 
-
-waht is data structures ? 
+what is data structures ? 
 
 It is a way to organize the data 
 
@@ -127,10 +125,57 @@ for suppose there is an array : [1,5,3,8,9,10,4,3,15,18,20]
 now the question is to find the duplicates in the array means find the similar elements in the array :
 lets see our approach 
 
+now if we see the approach we used the 2 loops to search for the duplicate elements 
+
+the approach is 1 doing search on : 5,3,8,9,10,4,3,15,18,20 
+
+a = [1,5,3,8,9,10,4,3,15,18,20]
+
+for i in range(len(a)):
+    for j in range(i + 1,len(a)):
+        if (a[i] == a[j]):
+            print(a[j])
+
+
+the Time Complexity for this = O(n ^ 2)
+space complexity is O(1) 
+
+Time complexity is O(n^2) for sorting the array 
+for using for loop the the time complexity is O(n) so O(n^2 ) + O(n) ~ O(n^2) which 
+
+
+now if we sort this array and do the process :
+
+a = [1,5,3,8,9,10,4,3,15,18,20]
+a.sort()
+
+for i in range(1,len(a)):
+    if a[i] == a[i - 1]:
+        print(a[i - 1])
+   
+Time complexity is O(n log n) for sorting the array 
+for using for loop the the time complexity is O(n) so O(n log n ) + O(n) ~ O(n log n) which 
+
+
+for 2 loops O(n ^2) for 3 loops O(n ^3) 
+
+
+now the time complexities we learn upto :
+
+O(1) 
+O(log n) 
+O(n) 
+O(n log n )
+O(n^ 2) 
+O(n^3)
+these 2 are different cases we dont go upto here:  
+O(2^n)
+O(n!) 
 
 
 
 
+the problems are started and if the problem needs any algorithm we will discuss it ther
 
 
 
