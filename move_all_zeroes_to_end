@@ -1,0 +1,17 @@
+oa =  [1, 2, 0, 4, 3, 0, 5, 0]
+
+count = 0
+
+for i in range(len(a)):
+    if a[i] > 0:
+        a[count] = a[i]
+        count += 1 
+
+for i in range(count,len(a)):
+    a[i] = 0 
+print(a)
+
+
+
+Time complexity is O(n) 
+space complexity is O(1) as we did not take the extra array 
