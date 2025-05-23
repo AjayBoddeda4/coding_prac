@@ -3,7 +3,7 @@ def binary(a,b):
     high = int(len(a)-1)
     
     while low <= high:
-        mid = int(len(a)/2)
+        mid = int(low + high)//2
         
         if a[mid] == b:
             return mid 
