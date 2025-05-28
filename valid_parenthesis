@@ -1,1 +1,20 @@
-tomorrow morning
+def stack(a):
+    pair = {')': '(', '}': '{', ']': '['}
+    stack = []
+    for i in a:
+        if i in pair:
+            if not stack or stack.pop() != pair[i]:
+                return False
+        else:
+            stack.append(i)
+    return not stack 
+
+a = "()"
+output = stack(a)
+print(output)
+        
+             
+Time complexity : O(n) 
+space Complexity is :O(n) beacuse of stack 
+
+
