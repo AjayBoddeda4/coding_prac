@@ -1,0 +1,14 @@
+a = [4,9,5]
+b = [9,4,9,8,4]
+
+set_a = set(a)
+set_b = set(b)
+
+u = set_a.intersection(set_b)
+list_a = list(u)
+print(list_a)
+
+as there are two arrays 
+time complexity is :O(n + m) 
+space complexity is :O(n + m) 
+
