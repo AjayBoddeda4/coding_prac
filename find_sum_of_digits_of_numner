@@ -1,0 +1,19 @@
+def sum_of_digits(a):
+    total = 0
+    for i in \\adef root(a):
+    if a == 0:
+        return 0 
+    return 1 +(a-1)% 9
+a = int(input())
+print(root(a)):
+    
+
+now this problem has more optimized way:O(1) and O(1)
+
+
+✅ Digital Root Formula:
+
+For any integer n > 0:
+
+text{digital root} = 1 + ((n - 1) \% 9)
+
