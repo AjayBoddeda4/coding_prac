@@ -1,6 +1,4 @@
-def sum_of_digits(a):
-    total = 0
-    for i in \\adef root(a):
+def sum_of_digits(a)::
     if a == 0:
         return 0 
     return 1 +(a-1)% 9
