@@ -1,0 +1,18 @@
+keep remeber one thing the leader is always checked from the right to left not from left to right 
+a =[16, 17, 4, 3, 5, 2]
+
+n = len(a)
+right = a[-1]
+save = [right]
+
+
+for i in range(n-2,-1,-1):
+    if a[i] > right:
+        right = a[i]
+        save.append(right)
+save.reverse()
+print(save)
+
+Time complexity is :O(n) 
+space comeplexity is :O(n) 
+
