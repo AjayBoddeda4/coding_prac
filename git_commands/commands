@@ -54,4 +54,10 @@ for suppose we are in the main branch: git checkout main
 
 but we want to create a brach with the code or inoformation which is in the feature1 so : git checkout -b feature4 feature1
 
+to delete the branch :
+we cant delete the branch by sitting in that branch means if we are in branch feature1 we cant delete it to delete it move to other branch: git checkout main 
+git branch -d feature1
+
+to push the code what we done in the feature 1:
+git push origin feature1
 
