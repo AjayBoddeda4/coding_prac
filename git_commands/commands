@@ -1,0 +1,14 @@
+git clone : to bring the repositry to the local machine
+
+scenario 1:
+------------
+create the repositry in the git and come back:
+now use git clone to check in to that repositry 
+
+now write code and do all ths stuff and :
+git add . -> to make it ready to commit 
+git commit -m "message" -> to commit it 
+
+
+scenario 2:
+--------
