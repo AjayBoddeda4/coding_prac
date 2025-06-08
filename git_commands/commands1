@@ -1,0 +1,32 @@
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+git --version
+git clone <repo-url>
+cd <repo-folder>
+git add .
+git commit -m "message"
+git push origin main
+mkdir one
+cd one
+touch file1 file2
+git status
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin <repo-url>
+git branch
+git branch -M main
+git push origin main
+git pull origin main
+git branch feature1
+git checkout feature1
+git checkout -b feature2
+git checkout -b feature3 feature1
+git checkout main
+git branch -d feature1
+git push origin feature1
+git remote -v
+git status
+git log
+git diff
