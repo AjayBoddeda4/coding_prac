@@ -11,7 +11,7 @@ a = int(input())
 print(ite(a))
 
 
-time Complextity is O(log ^2n) 
+time Complextity is O(log n) 
 
 space complexity = O(1) 
 
