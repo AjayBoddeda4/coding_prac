@@ -8,7 +8,50 @@ now use git clone to check in to that repositry
 now write code and do all ths stuff and :
 git add . -> to make it ready to commit 
 git commit -m "message" -> to commit it 
-
+git push origin main
 
 scenario 2:
 --------
+create an empty repositry in the git - URL
+
+now 
+come back to the terminal:
+
+select the path where you wants to create the file :
+mkdir one -> cd one -> touch file1,touch file 
+now : to check whether this folder is managed by git or not : git status 
+if it is managed check the url of it : git remote -v 
+
+if it is not manageed by the git make it managed by the git : git init 
+
+now make it ready to commit : git add .
+now commit it : git commit -m "changes" 
+
+now give the url copy it from the git and : git remote add origin <git repository> 
+
+now check the branch name : git branch 
+if it will be in the master 
+
+change it :git branch -M main 
+
+now push it : git push origin main 
+
+if it giving the error pull it first : git pull origin main 
+
+
+Branches:
+if we are woeking in any organization we dont work at main branch we have to create out own branch :
+
+create new branch: git branch feature1 
+
+to switch the brach from main to feature1 : git checkout feature1 
+
+what ever the code or information will be in the main it will be copied to the feature1 
+
+if we want to jump to new branch without even creating it or create and jump at a time we can use : git checkout -b feature3 
+
+for suppose we are in the main branch: git checkout main 
+
+but we want to create a brach with the code or inoformation which is in the feature1 so : git checkout -b feature4 feature1
+
+
