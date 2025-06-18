@@ -1,0 +1,19 @@
+a = [5,4,3,2,1]
+n = 5
+
+left = 0 
+right = len(a) -1 
+print(left)
+print(right)
+
+while left < right:
+    a[left],a[right] = a[right],a[left]
+    left += 1 
+    right -=1  
+print(a)
+    
+
+time complexity is :O(n) 
+space complexity is O(1) 
+
+

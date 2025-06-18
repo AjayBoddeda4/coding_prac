@@ -1,0 +1,21 @@
+
+a = [-2,1,-3,4,-1,2,1,-5,4] 
+
+sum1 = 0 
+max_sum = a[0]
+
+for i in range(len(a)):
+    if sum1 < 0:
+        sum1 = 0 
+    sum1 += a[i]
+    print(sum1)
+    if sum1 > max_sum:
+        max_sum= sum1 
+print(max_sum)
+   
+
+Time complexity is :O(n) 
+
+space Complexity is :O(1) 
+
+
