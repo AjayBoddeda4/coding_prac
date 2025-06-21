@@ -62,6 +62,54 @@ to push the code what we done in the feature 1:
 git push origin feature1
 
 
+when we made any changes in the file then we have to save it and stageit and commit it:
+
+when we want to get back from saved state:
+git restore <file> 
+
+when we get it back from the staged state:
+git restore --staged <file> 
+
+when we get it back from the commit:
+git log 
+
+copy the hash 
+
+git reset <hash> 
+
+if you want to go one step back 
+
+git reset -head~1
+
+if we want to back it fully 
+
+git reset --head <hash> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Link:https://learngitbranching.js.org/
