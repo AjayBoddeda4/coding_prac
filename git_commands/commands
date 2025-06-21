@@ -79,12 +79,11 @@ git reset <hash>
 
 if you want to go one step back 
 
-git reset -head~1
+git reset head~1
 
 if we want to back it fully 
 
-git reset --head <hash> 
-
+git reset --hard <hash> 
 
 
 
