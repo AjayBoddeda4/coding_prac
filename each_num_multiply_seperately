@@ -1,0 +1,21 @@
+a = [1,2,3,4]
+
+result = [1] * len(a)
+
+left = 1 
+for i in range(len(a)):
+    result[i] = left 
+    left = left * a[i]
+
+right = 1 
+
+for i in range(len(a)-1,-1,-1):
+    result[i] = result[i] * right 
+    right = right * a[i] 
+print(result)
+
+
+time complexity is :O(n) 
+space compelxity is O(1) 
+
+
