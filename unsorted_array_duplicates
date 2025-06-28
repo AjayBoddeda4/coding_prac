@@ -1,0 +1,21 @@
+if the array is unsorted then find the duplicates 
+
+a = [4, 3, 2, 7, 8, 2, 3, 1]
+
+output = []
+
+for i in range(len(a)):
+    index = abs(a[i]) - 1
+    
+    if a[index] < 0:
+        output.append(abs(a[i]))
+    else:
+        a[index] *= -1 
+print(output)
+        
+
+time complexity is :O(n)
+
+space complexity is O(1)
+
+
