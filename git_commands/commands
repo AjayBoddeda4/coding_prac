@@ -86,6 +86,15 @@ if we want to back it fully
 git reset --hard <hash> 
 
 
+FORK:
+
+it is the UI thing we have to do it using the github UI 
+
+this is used to bring the project of our working organization or any open source project 
+
+so we have to bring it to  our github account from their repositry
+
+once we brought it the flow -> clone it -> create a new branch -> work on it -> write the code -> push the code -> now make the pull request
 
 
 
