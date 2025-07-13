@@ -97,8 +97,18 @@ so we have to bring it to  our github account from their repositry
 once we brought it the flow -> clone it -> create a new branch -> work on it -> write the code -> push the code -> now make the pull request
 
 
+upstream -> from wheere we bring
+origin -> ours
+
+now the pull request is made the owner of the repo accepted the pull request now the feat branch is upto date and the upstream branch is upto date 
+
+the onky branch is not updated is the main branch in out local 
 
 
+to update it we need to make a pull request from the upstream 
+
+
+git pull upstream main
 
 
 
