@@ -111,10 +111,7 @@ to update it we need to make a pull request from the upstream
 git pull upstream main
 
 
-
-
-
-
+set upstream ur just like origin : git remote add upstream <url> 
 
 
 
