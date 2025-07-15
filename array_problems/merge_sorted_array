@@ -1,0 +1,23 @@
+a = [1,2,3,0,0,0]
+m = 3 
+b = [2,5,6]
+n = 3
+
+p1 = m - 1 
+p2 = n - 1 
+
+for i in range(m+n-1,-1,-1):
+    if p2 < 0:
+        break 
+    elif a[p1] > b[p2]:
+        a[i] = a[p1]
+        p1 = p1 - 1 
+    else:
+        a[i] = b[p2]
+        p2 = p2-1 
+print(a)
+        
+
+Time complexity is :O(m+n)  
+space complexity is O(1) 
+
