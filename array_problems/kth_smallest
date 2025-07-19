@@ -1,0 +1,19 @@
+a = [7,10,4,3,20,15]
+k = 3 
+
+first = second = third = a[0]
+
+for i in range(len(a)):
+    if a[i] < first:
+        third = second 
+        second = first 
+        first = a[i]
+    elif a[i] != first and a[i] < second:
+        third = second
+        second = a[i]
+    elif a[i] != first and a[i] != second and a[i] < third:
+        third = a[i]
+print(third)
+
+Time complexity :O(n) 
+space complexity :O(1) 
