@@ -1,0 +1,48 @@
+a = [13,46,24,52,20,9]
+
+
+
+for i in range(len(a)):
+    min_index = i
+    for j in range(i+1,len(a)):
+        if a[j] < a[min_index]:
+            min_index = j 
+    a[i],a[min_index] = a[min_index],a[i]
+print(a)
+
+
+
+
+lets decode this problem:
+
+
+0th index 
+----------
+min_index = 0 
+
+j = 0 + 1,6 
+
+a[1] < a[0] = 46 < 13 no 
+a[2] < a[0] = 24 < 13 no 
+a[3] < a[0] = 52 < 13 no 
+a[4] < a[0] = 20 < 13 no 
+a[5] < a[0] = 9 < 13 yes 
+
+min_index = 5 means 9
+
+so a[i],a[min_index] = a[min_index] ,a[i] means a[0],a[5] = a[5],a[0] 
+
+
+the inner logic is 
+
+1st index
+---------
+
+min_index = 1 
+
+j = 1+1,6 
+
+a[2] < a[1] = 24 < 46 yes      min_index = 2 means 24 
+a[3] < a[1] = 52 < 24 no 
+a[4] < a[1] = 20 < 24 yes        min_index = 4 mens 20  
+a[5] < a[1] = 9 < 20 yes       min_index = 5 means 9  
