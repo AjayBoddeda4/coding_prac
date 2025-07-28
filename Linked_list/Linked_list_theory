@@ -1,0 +1,47 @@
+The theory of the Linked list 
+
+
+now let think of a chain which is hanging with elements 1 -> 2 -> 3 -> 4 -> 5 
+
+now i wants to reverse these elements 
+
+
+as we know the linked list holds the node and address of the next node 
+
+
+so now just think out of the box if there is a chain hanging and we are holding it with onehand if we disconnect the 1st link except 1st link all the links will fall down 
+
+
+so what we do we connect the 2nd link to some link before we disconnect to the link 1 now 
+
+lets think i wants to reverse the list 
+
+
+assume the prev = none means the link before 1 there is nothing but assume 
+
+and 1 is the current link now if i disconnect the 1st and 2nd link directly then 2nd link wont have head
+
+so create a variable and store the 2nd link in that now 
+
+connect the 1st link to the prev 
+
+
+like 
+
+prev = none 
+curr = head 
+
+
+now connect 2nd to some variable 
+
+temp_next = curr.next 
+
+now disconnect 1st link :
+ curr.next = prev 
+
+now make the prev = curr 
+
+and curr = temp_next 
+
+thats'it 
+
