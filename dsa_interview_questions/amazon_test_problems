@@ -1,0 +1,34 @@
+`def findHash(param):
+    possible_remainders = []
+    for p in param:
+        possible_remainders.extend(range(p))  
+        print(possible_remainders)
+
+# Example
+param = [1, 2, 1, 3]
+print(findHash(param))  # Output: 
+
+
+
+this is the error problem
+
+
+with Sorting time complexity : O(n log n) 
+space complexity is :O(1) 
+
+
+a = [1,2,1,3]
+a.sort()
+
+distinct_count = 0 
+current_value = 0 
+
+for i in a:
+    if current_value < i:
+        distinct_count +=1 
+        current_value +=1 
+print(distinct_count)
+
+
+
+
