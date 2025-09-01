@@ -1,0 +1,57 @@
+a = [3, -1, 4, 2, 5]
+l = 1
+r = 3 
+array = []
+sum1 = 0
+
+for i in range(len(a)):
+    sum1 += a[i]
+    array.append(sum1)
+
+if l == 0:
+    print(array[r])
+else:
+    print(array[r] - array[l-1])
+
+
+this is the prefix sum 
+
+the theory is they give an array and l and r 
+
+now l = 1 and r = 3 
+
+so the total from l =1 to l =3 
+
+means : -1 + 4 + 2 = 5 
+
+so create an empty array add all the elements like [3, (3-1) 2, 4 + 2=6, 6 + 2 = 8,8+5=13) so (3,2,6,8,13) 
+
+now find the addition of 1 to 3  so 8 - 3 = 5 
+
+that is the output 
+
+product of itself also used here 
+---------------------------------
+
+a = [1,2,3,4]
+l = 1
+r = 2
+
+array = [1] * len(a)
+
+pro=1 
+
+for i in range(len(a)):
+    array[i] = pro * a[i]
+    pro *= a[i]
+print(array[::-1])
+
+if l == 0:
+    print(array[r])
+else:
+    print(array[r]// array[l-1])
+
+
+
+
+
