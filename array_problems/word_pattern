@@ -1,0 +1,24 @@
+def wordPattern(self, p: str, w: str) -> bool:
+        words = w.split(" ")
+        patt = p
+
+        if len(words) != len(patt):
+            return False 
+        
+        ch_w = {}
+        w_ch = {}
+
+        for ch,w1 in zip(patt,words):
+            if ch in ch_w:
+                if ch_w[ch] != w1:
+                    return False 
+            else:
+                ch_w[ch] = w1
+            
+            if w in w_ch:
+                if w_ch[w1] != ch:
+                    return False 
+            else:
+                w_ch[w1] = ch 
+        return True
+
