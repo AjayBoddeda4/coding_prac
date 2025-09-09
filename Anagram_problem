@@ -1,0 +1,76 @@
+from collections import defaultdict
+
+a = 'married'
+b = 'admirer'
+
+
+h1 = defaultdict(int)
+h2 = defaultdict(int)
+
+for i in range(len(a)):
+    h1[a[i]] = h1[a[i]] + 1 
+    h2[b[i]] = h2[b[i]] + 1
+
+if h1 == h2:
+    print("True")
+else:
+    print("False")
+
+
+
+
+
+
+
+
+
+a = 'married'
+b = 'admirer'
+c = sorted(a)
+d = sorted(b)
+
+left = 0 
+right = 0 
+
+for i in range(len(a)):
+    if c[left] == d[right]:
+        left +=1 
+        right +=1 
+    elif c[left] != d[right]:
+        break
+if left == right:
+    print("True")
+else:
+    print("False")
+
+
+
+
+
+
+from collections import Counter
+s = "cbaebabacd" 
+p = "abc"
+
+n = len(p)
+ana = s[:n]
+
+
+save = [ana]
+inc = 1
+
+
+for i in range(n,len(s)):
+    output = s[inc:i+1]
+    inc +=1 
+    save.append(output)
+
+
+for i in range(len(save)):
+    if save[i] == p:
+        print(p)
+
+for sub in save:
+    if Counter(sub) == Counter(p):   # anagram check
+        print(f"Anagram found: {sub}")
+
