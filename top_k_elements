@@ -1,0 +1,31 @@
+a = [1,2,2,3,3,3]
+k = 2
+
+seen = {}
+store = []
+
+if len(a) <=1:
+    print(a)
+
+for i in range(len(a)):
+    if a[i] in seen:
+        seen[a[i]] +=1 
+    else:
+        seen[a[i]] = 1 
+
+for i,j in seen.items():
+    store.append(i)
+store.sort()
+
+
+leng = len(store)
+final = leng - k 
+
+print(store[final:])
+
+
+
+
+
+
+
