@@ -1,0 +1,12 @@
+a = ["act","pots","tops","cat","stop","hat"]
+
+seen = {}
+
+for i in a:
+    sort_string = ''.join(sorted(i))
+    
+    if sort_string in seen:
+        seen[sort_string].append(i)
+    else:
+        seen[sort_string] = [i]
+print([seen.values()])
