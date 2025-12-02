@@ -1,0 +1,24 @@
+class Solution:
+    def topKFrequent(self, a: List[int], k: int) -> List[int]:
+        seen = {}
+       
+
+        for i in range(len(a)):
+            if a[i] in seen:
+                seen[a[i]] +=1 
+            else:
+                seen[a[i]] = 1 
+        
+        bucket = [[]for _ in range(len(a)+1)]
+        
+        for i,j in seen.items():
+            bucket[j].append(i)
+        
+        res = []
+        for i in range(len(bucket)-1,0,-1 ):
+            for j in bucket[i]:
+                res.append(j)
+                if len(res) == k:
+                    return res
+
+        
